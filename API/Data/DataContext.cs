@@ -22,8 +22,9 @@ namespace API.Data
         //creates a table for Users
         //Columns: UserId, UserName
         /// <summary>
-        /// DbSet for AppUser entity, will correspond to a table with columns UserId, UserName
+        /// property for AppUser that will have UserId and UserName
         /// </summary>
+        /// <value>A DbSet</value>
         public DbSet<AppUser> Users {get; set;}
     }
 }

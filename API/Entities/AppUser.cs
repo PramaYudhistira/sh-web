@@ -17,6 +17,11 @@ namespace API.Entities
         [Key]
         public int UserId { get; set; }
 
+
+        /// <summary>
+        /// The username for each UserId
+        /// </summary>
+        /// <value>The string the user enters for their username</value>
         public string UserName { get; set; }
 
     }
