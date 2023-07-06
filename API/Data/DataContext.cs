@@ -25,6 +25,6 @@ namespace API.Data
         /// property for AppUser that will have UserId and UserName
         /// </summary>
         /// <value>A DbSet</value>
-        public DbSet<AppUser> Users {get; set;}
+        public DbSet<AppUser> AppUsers {get; set;}
     }
 }
