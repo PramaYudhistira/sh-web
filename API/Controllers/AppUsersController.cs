@@ -38,10 +38,10 @@ namespace API.Controllers
         /// <param name="id">The id of the user that is being searched</param>
         /// <returns>The AppUser entity with the id that is being searched</returns>
         [HttpGet("{id}")]
-        public ActionResult<AppUser> GetUser(int id)
+        public async Task<ActionResult<AppUser>> GetUser(int id)
         {
-            var user = _context.AppUsers.Find(id);
-            return user;
+            var user = _context.AppUsers.FindAsync(id);
+            return await user;
         }
 
     }
