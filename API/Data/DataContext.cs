@@ -12,7 +12,7 @@ namespace API.Data
         /// <summary>
         /// constructor for DataContext that calls the DbContext constructor that passes in the connection string
         /// </summary>
-        /// <param name="options">the connection string being passed in</param>
+        /// <param name="options">the connection string</param>
         /// <returns></returns>
         public DataContext(DbContextOptions options) : base(options)
         {

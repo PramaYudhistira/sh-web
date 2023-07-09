@@ -13,6 +13,12 @@ namespace API.Controllers
     {
 
         private readonly DataContext _context;
+
+
+        /// <summary>
+        /// Constructor for AppUsersController
+        /// </summary>
+        /// <param name="context">Representation of the database "object"</param>
         public AppUsersController(DataContext context)
         {
             this._context = context;
