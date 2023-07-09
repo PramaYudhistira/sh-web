@@ -1,6 +1,7 @@
 using API.Data;
 using API.Entities;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 
 namespace API.Controllers
 {
@@ -17,10 +18,17 @@ namespace API.Controllers
             this._context = context;
         }
 
+
+
+
+        /// <summary>
+        /// Method that returns list of users
+        /// </summary>
+        /// <returns></returns>
         [HttpGet]
-        public ActionResult<IEnumerable<AppUser>> GetUsers()
+        public async Task<ActionResult<IEnumerable<AppUser>>> GetUsers()
         {
-            var users = _context.AppUsers.ToList();
+            var users = await _context.AppUsers.ToListAsync();
             return users;
         }
 
