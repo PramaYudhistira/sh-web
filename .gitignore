@@ -1,3 +1,6 @@
 /.vscode
 /personalNotes
 /API/sidehustle.db
+/API/sidehustle.db-shm
+/API/sidehustle.db-wal
+/API/appsettings.json

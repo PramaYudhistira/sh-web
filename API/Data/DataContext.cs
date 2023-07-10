@@ -22,11 +22,17 @@ namespace API.Data
         //creates a table for Users
         //Columns: UserId, UserName
         /// <summary>
-        /// property for AppUser that will have UserId and UserName
+        /// Table for AppUsers
         /// </summary>
         /// <value>A DbSet which represents the table of users</value>
         public DbSet<AppUser> AppUsers { get; set; }
 
+
+
+        /// <summary>
+        /// Table for posts
+        /// </summary>
+        /// <value></value>
         public DbSet<Post> Posts { get; set; }
     }
 }
