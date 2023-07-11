@@ -5,6 +5,8 @@ using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Threading.Tasks;
 
+
+//TODO: Create a database schema diagram
 namespace API.Entities
 {
     public class Post
@@ -15,12 +17,18 @@ namespace API.Entities
         /// </summary>
         /// <value></value>
         [Key]
-        public int PostId{ get; set; }
+        public int PostId { get; set; }
 
-        public string PostTypeId{ get; set; }
+        public string PostTypeId { get; set; }
 
+
+
+        /// <summary>
+        /// Establish the relation between User and Post
+        /// </summary>
+        /// <value></value>
         [ForeignKey("AppUser")]
-        public int AppUserId{ get; set; }
+        public int AppUserId { get; set; }
 
 
         /// <summary>
@@ -28,6 +36,11 @@ namespace API.Entities
         /// -oriented level
         /// </summary>
         /// <value></value>
-        public AppUser AppUser{ get; set; } 
+        public AppUser AppUser { get; set; }
+
+        [ForeignKey("Campus")]
+        public int CampusId { get; set; }
+
+        public Campus Campus { get; set; }
     }
 }
