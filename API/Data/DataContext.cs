@@ -34,5 +34,7 @@ namespace API.Data
         /// </summary>
         /// <value></value>
         public DbSet<Post> Posts { get; set; }
+
+        public DbSet<Campus> Campuses { get; set; }
     }
 }
