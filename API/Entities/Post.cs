@@ -38,9 +38,17 @@ namespace API.Entities
         /// <value></value>
         public AppUser AppUser { get; set; }
 
+        /// <summary>
+        /// Establish the relation between User and Campus
+        /// </summary>
+        /// <value></value>
         [ForeignKey("Campus")]
         public int CampusId { get; set; }
 
+        /// <summary>
+        /// Navigation property for Campus
+        /// </summary>
+        /// <value></value>
         public Campus Campus { get; set; }
 
         

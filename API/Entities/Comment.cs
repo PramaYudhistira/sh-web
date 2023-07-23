@@ -5,6 +5,8 @@ using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Threading.Tasks;
 
+
+//TODO: Make the corresponding controller
 namespace API.Entities
 {
     public class Comment
