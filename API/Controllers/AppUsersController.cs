@@ -24,9 +24,6 @@ namespace API.Controllers
             this._context = context;
         }
 
-
-
-
         /// <summary>
         /// Method that returns list of users
         /// </summary>
