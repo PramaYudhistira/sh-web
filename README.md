@@ -10,3 +10,6 @@ Tech stack: I am currently building the backend code using ASP.NET and planning 
 Running on dotnet version 7.0.305
 
 Entity Framework version 7.0.3
+
+NOTE:- KEY value types will be changed to Guids, make sure to treat ids as strings
+- may have to change IDs to Guids so treat everything as a string
