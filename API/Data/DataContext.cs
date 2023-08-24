@@ -36,5 +36,7 @@ namespace API.Data
         public DbSet<Post> Posts { get; set; }
 
         public DbSet<Campus> Campuses { get; set; }
+
+        public DbSet<Chat> Chats { get; set; }
     }
 }
